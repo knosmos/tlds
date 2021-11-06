@@ -42,6 +42,7 @@ class ReadText:
         self.text = []
 
         for i in range(len(valueList)):
+            print(pytesseract.image_to_string(valueList[i]))
             self.text.append (pytesseract.image_to_string(valueList[i]).replace('\x0c', ''))
 
 class EvaluateString:

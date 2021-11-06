@@ -15,7 +15,7 @@ def loadChar(char):
         return list(map(lambda i:list(map(float,i.split())),f.read().split("\n")))
 
 numbers = {}
-for i in [0,1,2,3,4,5,6,7,8,9,"+","-","="]:
+for i in [0,1,2,3,4,5,6,7,8,9,"+","-","=","x","y","^"]:
     numbers[str(i)] = loadChar(i)
 
 charWidth = 10
