@@ -39,8 +39,8 @@ for i in range(-units//2,units//2+1):
 res += "G0 Z10\n"
 convGcode.charWidth = 5
 convGcode.letterSpacing = 0.1
-res += convGcode.writeChars(str(int(units*unitSize)),gridSize,-yOffset-gridSize/2)
-res += convGcode.writeChars(str(int(-units*unitSize)),0,-yOffset-gridSize/2)
+res += convGcode.writeChars(str(int(units*unitSize)//2),gridSize,-yOffset-gridSize/2)
+res += convGcode.writeChars(str(int(-units*unitSize)//2),0,-yOffset-gridSize/2)
 
 res += "G0 Z40\n"
 
