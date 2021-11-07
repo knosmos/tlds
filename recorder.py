@@ -4,7 +4,7 @@ from pygame.locals import *
 # create window
 pygame.init()
 screen = pygame.display.set_mode((200, 400))
-pygame.display.set_caption("Gcode Converter Recorder")
+pygame.display.set_caption("TLDS Handwriting Recorder")
 
 points = []
 recording = False
